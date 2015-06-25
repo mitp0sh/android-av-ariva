@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EmailInputEditor">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+    <style name="EditTextInlineError">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/error_text_color</item>
+        <item name="android:paddingTop">@dimen/DefaultPaddingSize</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="NavigationText">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">20.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_marginTop">25.0dip</item>
+        <item name="android:layout_marginRight">12.0dip</item>
+    </style>
+    <style name="MainScreenItemTitle">
+        <item name="android:textSize">36.0sp</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">36.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="MainItemDesc">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff929292</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:paddingLeft">36.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/progressLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/loadingProgressBar" android:padding="@dimen/DefaultPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.avira.android.KievitRegularTextView android:textColor="@color/black_body_text_color" android:gravity="center_vertical" android:id="@id/progressTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="@color/listview_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.avira.android.custom.AviraWebView android:id="@id/uninstallationSurveyWebView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TableRow android:id="@id/contactListOptionRow" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avira.android.KievitLightButton android:textSize="17.5sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/continueButton" android:background="@drawable/btn_dark_flat_rounded" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/DefaultPaddingSize" android:text="@string/Continue" android:layout_weight="1.0" />
+    </TableRow>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/button_close" />
+    <ScrollView android:padding="@dimen/XXLPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corner" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:textSize="22.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/deviceAdministratorTextView" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/DeviceAdministrator" />
+            <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/deviceAdminEnableTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/DefaultPaddingSize" android:text="@string/registration_dev_admin_enable_msg" />
+            <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/deviceAdminRemoteWipeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/DefaultPaddingSize" android:text="@string/registration_dev_admin_remote_wipe" />
+            <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/deviceAdminRemoteLockTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/DefaultPaddingSize" android:text="@string/registration_dev_admin_remote_lock" />
+            <com.avira.android.KievitLightButton android:id="@id/devAdminEnableDisableButton" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/LargerPaddingSize" android:layout_marginTop="@dimen/XXLPaddingSize" android:layout_marginRight="@dimen/LargerPaddingSize" android:text="@string/Enable" style="@style/DarkGrayButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

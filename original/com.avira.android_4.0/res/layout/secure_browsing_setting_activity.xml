@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/button_close" />
+    <ScrollView android:padding="@dimen/XXLPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corner" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:textSize="22.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/secure_browsing_setting_screen_title" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/secure_browsing_setting_title" />
+            <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/secure_browsing_setting_screen_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/DefaultPaddingSize" android:layout_marginRight="@dimen/DefaultPaddingSize" android:text="@string/secure_browsing_on_setting_screen_desc" />
+            <com.avira.android.KievitLightButton android:textSize="17.5sp" android:textColor="@color/white_background_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/secure_browsing_setting_screen_btn" android:background="@drawable/btn_dark_flat_rounded" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/LargerPaddingSize" android:layout_marginTop="@dimen/XLPaddingSize" android:layout_marginRight="@dimen/LargerPaddingSize" android:text="@string/secure_browsing_btn_disable" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

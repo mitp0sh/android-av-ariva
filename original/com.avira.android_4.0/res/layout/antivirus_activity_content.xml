@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dashboard_item_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progressSpinner" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="8.0dip" android:progressDrawable="@drawable/progress_bar" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" style="@style/AntivirusItemBackground">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:id="@id/scanAppStatus" android:text="@string/ScannedApps" android:layout_toLeftOf="@id/scannedAppCount" style="@style/AntivirusItemTitle" />
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/antivirus_item_text_size" android:textColor="@color/menu_value_text_color" android:id="@id/scannedAppCount" android:text="@string/ScannedAppsCount" style="@style/AntivirusItemValue" />
+        </RelativeLayout>
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/main_screen_medium_font" android:textColor="@color/menu_value_text_color" android:gravity="center_vertical" android:id="@id/scanned_apps_last_scan" android:padding="@dimen/DefaultPaddingSize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/antivirus_item_marginLeft" android:layout_marginRight="@dimen/antivirus_item_marginRight" android:text="@string/Ended" style="@style/SingleLineEllipsize" />
+    </LinearLayout>
+    <View style="@style/DashboardItemDivider" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" style="@style/AntivirusItemBackground">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:id="@id/scanFileStatus" android:text="@string/ScannedFiles" android:layout_toLeftOf="@id/scannedFileCount" style="@style/AntivirusItemTitle" />
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/antivirus_item_text_size" android:textColor="@color/menu_value_text_color" android:id="@id/scannedFileCount" android:text="@string/ScannedAppsCount" style="@style/AntivirusItemValue" />
+        </RelativeLayout>
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/main_screen_medium_font" android:textColor="@color/menu_value_text_color" android:gravity="center_vertical" android:id="@id/scanned_files_last_scan" android:padding="@dimen/DefaultPaddingSize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/antivirus_item_marginLeft" android:layout_marginRight="@dimen/antivirus_item_marginRight" android:text="@string/Ended" style="@style/SingleLineEllipsize" />
+    </LinearLayout>
+    <View style="@style/DashboardItemDivider" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/vdfMainLayout" style="@style/AntivirusItemBackground">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/vdfInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/antivirus_item_subtext_size" android:id="@id/vdfVersionLabel" android:text="@string/VirusDefinitionFile" android:layout_toLeftOf="@id/vdfVersion" style="@style/AntivirusItemTitle" />
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/antivirus_item_subtext_size" android:textColor="@color/menu_value_text_color" android:id="@id/vdfVersion" style="@style/AntivirusItemValue" />
+        </RelativeLayout>
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/main_screen_medium_font" android:textColor="@color/menu_value_text_color" android:gravity="center_vertical" android:id="@id/nextVdfCheck" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/antivirus_item_marginLeft" android:layout_marginRight="@dimen/antivirus_item_marginRight" />
+    </LinearLayout>
+</LinearLayout>

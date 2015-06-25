@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avira.android.KievitLightTextView android:textSize="22.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/helpTextView" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_huge" android:text="@string/iab_landing_title" android:layout_weight="1.0" />
+    <com.avira.android.KievitLightTextView android:textSize="22.0sp" android:textColor="@color/green_light_text" android:gravity="center" android:id="@id/iab_landing_title" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_huge" android:layout_weight="1.0" />
+    <View android:background="@color/gray_on_white" android:layout_width="200.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="99999.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/iab_premium_features_container" android:padding="@dimen/XXLPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/iab_prem_feat_sec_br" layout="@layout/iab_premium_feature_item" />
+            <include android:id="@id/iab_prem_feat_sup_pr" layout="@layout/iab_premium_feature_item" />
+            <include android:id="@id/iab_prem_feat_tech_sup" layout="@layout/iab_premium_feature_item" />
+        </LinearLayout>
+    </ScrollView>
+    <com.avira.android.KievitLightButton android:id="@id/iab_but_buy_wallet" android:background="@drawable/btn_roundshape_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/XLPaddingSize" android:layout_marginBottom="@dimen/XLPaddingSize" android:text="@string/iab_landing_upgrade_iab" android:drawableLeft="@drawable/iab_google_play" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+    <com.avira.android.KievitLightTextView android:id="@id/iab_but_buy_avira" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/XLPaddingSize" android:text="@string/iab_landing_upgrade_web" android:layout_weight="1.0" />
+</LinearLayout>

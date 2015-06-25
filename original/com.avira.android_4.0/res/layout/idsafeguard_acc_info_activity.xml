@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/identity_safeguard_item_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:layout_gravity="center_horizontal" android:id="@id/identity_guard_breach_list" android:background="@color/identity_safeguard_item_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/identitiy_safeguard_list_separator" android:dividerHeight="1.0dip" />
+    <com.avira.android.KievitLightButton android:id="@id/dismiss_all_button" android:visibility="gone" android:text="@string/id_safeguard_contact_dismiss_all" android:layout_alignParentBottom="true" style="@style/IdentitySafeguardDismissAllButton" />
+</RelativeLayout>

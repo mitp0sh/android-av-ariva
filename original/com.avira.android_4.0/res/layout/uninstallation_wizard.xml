@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:orientation="horizontal" android:id="@id/headerLayout" android:background="@color/white_background_color" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.avira.android.KievitLightBoldTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:textColor="@color/black_body_text_color" android:gravity="center" android:id="@id/headerText" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/LargerPaddingSize" android:text="@string/Uninstallation" android:layout_weight="1.0" />
+    </TableRow>
+    <ScrollView android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip">
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/TwoLineSubTextSize" android:textColor="@color/black_body_text_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/UninstallationMainText" />
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/TwoLineSubTextSize" android:textColor="@color/black_body_text_color" android:gravity="center_vertical" android:id="@id/instructionTextView" android:paddingTop="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/devAdminButton" android:paddingTop="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.avira.android.KievitRegularBoldTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/DeviceAdministrator" android:layout_weight="1.0" />
+                <com.avira.android.KievitRegularBoldTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:id="@id/devAdminStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.avira.android.KievitRegularBoldTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/black" android:paddingLeft="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GreaterThan" />
+            </LinearLayout>
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/TwoLineSubTextSize" android:textColor="@color/black_body_text_color" android:paddingTop="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/UninstallationInstruction" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/contactListOptionRow" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avira.android.KievitLightButton android:id="@id/uninstallButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/DefaultPaddingSize" android:text="@string/Continue" android:layout_weight="1.0" style="@style/DarkGrayButton" />
+        <com.avira.android.KievitLightButton android:id="@id/cancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/DefaultPaddingSize" android:text="@string/Cancel" android:layout_weight="1.0" style="@style/LightGrayButton" />
+    </LinearLayout>
+</LinearLayout>

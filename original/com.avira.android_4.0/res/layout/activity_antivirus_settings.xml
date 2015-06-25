@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideInset" android:background="@color/dashboard_item_bg_color" android:paddingLeft="@dimen/activity_padding" android:paddingRight="@dimen/activity_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:src="@drawable/scan_logo_safe" />
+        <com.avira.android.KievitRegularTextView android:textSize="@dimen/text_size_title" android:textColor="@color/text_dark_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/av_settings_title" />
+        <com.avira.android.KievitLightBoldTextView android:textColor="@color/bg_antivirus_unsafe" android:gravity="center" android:id="@id/warning" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/av_settings_warning" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

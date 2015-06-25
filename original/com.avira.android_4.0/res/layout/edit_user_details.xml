@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|left" android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:contentDescription="@string/imageButtonContentDescription" style="@style/NavigationText" />
+        <com.avira.android.KievitRegularBoldTextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/SaveAndProceed" style="@style/NavigationText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ScrollView android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+            <FrameLayout android:id="@id/fragmentHolder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

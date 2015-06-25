@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white_background_color" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/dialog_header" />
+    <ListView android:id="@id/customSpinnerListView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+    <LinearLayout android:paddingLeft="@dimen/LargerPaddingSize" android:paddingRight="@dimen/LargerPaddingSize" style="@style/FooterLayout">
+        <Button android:id="@id/spinnerCancelButton" android:layout_width="0.0dip" android:layout_marginTop="@dimen/LargerPaddingSize" android:layout_marginBottom="@dimen/LargerPaddingSize" android:text="@string/Cancel" android:layout_weight="1.0" style="@style/StandardButton" />
+    </LinearLayout>
+</LinearLayout>

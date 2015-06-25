@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.avira.android.KievitLightTextView android:textSize="46.0sp" android:textColor="@color/black_body_text_color" android:gravity="center" android:id="@id/lock_title" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/antitheft_lock" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <ImageView android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/antitheft_lock_blue_icon" android:layout_centerInParent="true" android:contentDescription="@string/imageButtonContentDescription" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:background="#fff7f7f7" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.avira.android.KievitLightTextView android:textSize="36.0sp" android:textColor="@color/black_body_text_color" android:gravity="center" android:id="@id/lock_my_device_title" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/antitheft_lock_my_device" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <com.avira.android.KievitRegularTextView android:textSize="20.0sp" android:textColor="#ffc0c0c0" android:gravity="center" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/antitheft_lock_details" android:layout_below="@id/lock_my_device_title" android:layout_centerInParent="true" android:alpha="0.7" />
+        <com.avira.android.KievitRegularTextView android:textSize="18.0sp" android:textColor="@color/black_body_text_color" android:gravity="center" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AccessFeatureFromWebConsole" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

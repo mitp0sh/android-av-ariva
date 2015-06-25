@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lockscreen_content_padding">16.0dip</dimen>
+    <dimen name="lockscreen_message_text_size">40.0sp</dimen>
+    <dimen name="lockscreen_pin_pad_padding">144.0dip</dimen>
+    <dimen name="lockscreen_pin_pad_bottom_padding">64.0dip</dimen>
+    <dimen name="lockscreen_pin_text_size">28.0sp</dimen>
+    <dimen name="lockscreen_button_text_size">40.0sp</dimen>
+    <dimen name="lockscreen_warning_text_size">26.0sp</dimen>
+    <dimen name="lockscreen_call_button_text_size">18.0sp</dimen>
+    <dimen name="lockscreen_small_padding">8.0dip</dimen>
+    <dimen name="lockscreen_medium_padding">16.0dip</dimen>
+    <dimen name="lockscreen_large_padding">48.0dip</dimen>
+    <dimen name="lockscreen_end_call_size">128.0dip</dimen>
+    <dimen name="padding_controls">80.0dip</dimen>
+    <dimen name="toggle_btn_text_size">28.0sp</dimen>
+    <dimen name="toggle_btns_padding">50.0dip</dimen>
+</resources>

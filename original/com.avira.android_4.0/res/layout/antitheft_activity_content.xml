@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dashboard_item_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/screamButton" style="@style/AntiTheftItemBackground">
+        <com.avira.android.KievitLightTextView android:id="@id/screamTitleId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AntitheftScream" style="@style/AntiTheftItemTitle" />
+        <com.avira.android.KievitLightTextView android:id="@id/screamDescId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AntitheftScreamDesc" style="@style/AntiTheftItemDesc" />
+    </LinearLayout>
+    <View style="@style/DashboardItemDivider" />
+    <LinearLayout android:id="@id/wipeButton" style="@style/AntiTheftItemBackground">
+        <com.avira.android.KievitLightTextView android:id="@id/wipeTitleId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AntitheftWipe" style="@style/AntiTheftItemTitle" />
+        <com.avira.android.KievitLightTextView android:id="@id/wipeTitleDescId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AntitheftWipeDesc" style="@style/AntiTheftItemDesc" />
+    </LinearLayout>
+    <View style="@style/DashboardItemDivider" />
+    <LinearLayout android:id="@id/lockButton" style="@style/AntiTheftItemBackground">
+        <com.avira.android.KievitLightTextView android:id="@id/lockTitleId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AntitheftLock" style="@style/AntiTheftItemTitle" />
+        <com.avira.android.KievitLightTextView android:id="@id/lockTitleDescId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AntitheftLockDesc" style="@style/AntiTheftItemDesc" />
+    </LinearLayout>
+</LinearLayout>

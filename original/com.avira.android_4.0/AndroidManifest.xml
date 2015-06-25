@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.avira.android" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"/>
+    <permission android:name="com.avira.android.permission.REMOTE_LOCK_SERVICE" android:protectionLevel="signature"/>
+    <permission android:name="com.avira.android.permission.INVOKE_INTERNAL_HANDLER" android:protectionLevel="signature"/>
+    <permission android:name="com.avira.android.permission.INVOKE_WIPE_FEATURES" android:protectionLevel="signature"/>
+    <permission android:name="com.avira.android.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avira.android.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <permission android:name="com.avira.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.avira.android.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.avira.android.permission.REMOTE_LOCK_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.avira.android.permission.INVOKE_INTERNAL_HANDLER"/>
+    <uses-permission android:name="com.avira.android.permission.INVOKE_WIPE_FEATURES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.avira.android.ApplicationService" android:persistent="true" android:theme="@android:style/Theme.NoTitleBar">
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/global_tracker"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.avira.android.AviraMobileSecurityActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.uninstallation.UninstallationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.uninstallation.UninstallationSurveyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.uninstallation.UninstallationLandingPage" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.welcome.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.registration.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.CustomTranslucent"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.registration.CreateAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.CustomTranslucent"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.userprofile.CreateUserDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.featuresintroduction.FeaturesIntroductionActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.firstscan.FirstVDFDownloadActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.avira.android.userprofile.EditUserDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.userprofile.UserPhotoSelectOptionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.avira.android.dashboard.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antitheft.activities.ATMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antitheft.activities.ATLockOrWipeDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antitheft.activities.ATYellDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antitheft.activities.ATRemoteYellActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:excludeFromRecents="true" android:name="com.avira.android.antitheft.activities.ATRemoteLockClearTaskActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.avira.android.dashboard.DashboardHelpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.premium.DashboardPremiumActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.dashboard.DashboardSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.dashboard.DashboardDeviceAdministratorActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.debug.DebuggingPreferencesActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLAddSmsLogActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLAddCallLogActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLAddContactActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLContactEditActivity" android:theme="@style/DialogNoTitle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLDeleteActivity" android:noHistory="true"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.avira.android.blacklist.activities.BLActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.avira.android.blacklist.activities.BLAddContactOptionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLAddEditContactActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.avira.android.blacklist.activities.BLMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.avira.android.blacklist.activities.BLContactsListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.avira.android.blacklist.activities.BLContactHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLHistoryDetailsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLHistoryMessageDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLImportActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.blacklist.activities.BLOEHistoryDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antivirus.AntivirusOEActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antivirus.scanscheduler.ScanSchedulerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antivirus.OEScanResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.avira.android.antivirus.OEScanResultDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.premium.SupportDetailsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.license.ThirdPartyLicenseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.cropimage.CropImage" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.idsafeguard.activities.ISMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.idsafeguard.activities.ISContactsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.idsafeguard.activities.ISAccountInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.idsafeguard.activities.ISBreachInformationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.idsafeguard.activities.ISRecentlyBreachedCompaniesActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.idsafeguard.activities.ISInformationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.securebrowsing.activities.SBActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.avira.android.dashboard.DashboardSecureBrowsingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name="com.avira.android.remotelock.RemoteLockClearTaskActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.applock.activities.AppListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.avira.applock.activities.CreatePinActivity" android:noHistory="true" android:screenOrientation="portrait" android:taskAffinity="com.avira.applock.CreatePinActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.avira.applock.activities.CreatePasswordActivity" android:noHistory="true" android:screenOrientation="portrait" android:taskAffinity="com.avira.applock.CreatePasswordActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.applock.activities.SetupCompletedActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.avira.applock.activities.LockScreenActivity" android:screenOrientation="portrait" android:taskAffinity="com.avira.applock.LockScreenActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.applock.activities.RecoverPinViaPassActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.applock.activities.RecoverPinViaEmailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.applock.activities.SettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.avira.android.vdfupdate.VdfUpdateActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.avira.android.dashboard.SignActivity" android:screenOrientation="portrait" android:theme="@style/Theme.CustomTranslucent"/>
+        <activity android:name="com.avira.android.notifyappupdate.CustomURLHandlerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="aoe"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.antivirus.AntivirusSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.iab.IABPremiumLandingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.iab.IABCongratulationsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.iab.IABPurchaseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.facebookconnect.FacebookConnectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.facebook.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.avira.android.googleconnect.GoogleConnectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.avira.android.antivirus.AppInstallUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.applock.receivers.PackageChangesReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.avira.applock.receivers.BootCompletedReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.avira.android.BootCompletedBroadcastReceiver">
+            <intent-filter android:priority="99999">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.avira.android.ActionHandlerBroadcastReceiver" android:permission="com.avira.android.permission.INVOKE_INTERNAL_HANDLER">
+            <intent-filter>
+                <action android:name="com.avira.android.ACTION_POSTDATA"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:description="@string/app_name" android:label="@string/app_name" android:name="com.avira.android.deviceadmin.DeviceAdminReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin_sample"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.android.common.gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.avira.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.android.common.receivers.TimeChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.android.utilities.ConnectivityChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.avira.android.PackageUpdateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:path="com.avira.android" android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.avira.android.blacklist.receivers.BLOnCallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.avira.android.blacklist.receivers.BLOnSmsBroadcastReceiver">
+            <intent-filter android:priority="99999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.avira.android.antivirus.AutoUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.avira.android.ACTION_UPDATE_ANTIVIRUS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.avira.android.antivirus.CleanScanResultReceiver">
+            <intent-filter>
+                <action android:name="com.avira.android.ACTION_TRACK_CLEAN_APP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.avira.android.antivirus.RenewUpdateOnSubscriptionRenewReceiver">
+            <intent-filter>
+                <action android:name="com.avira.android.ACTION_PREMIUM_STATUS_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.avira.android.notifyappupdate.ApplicationUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.avira.android.common.receivers.ShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.avira.android.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.android.receivers.TestsReceiver">
+            <intent-filter>
+                <action android:name="com.avira.android.ACTION_TEST_FEATURE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.android.antivirus.scanscheduler.StartScanReceiver"/>
+        <receiver android:name="com.avira.android.antivirus.ScanNotificationActionReceiver"/>
+        <receiver android:name="com.avira.android.common.receivers.LowBatteryReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.avira.applock.service.AppLockerService"/>
+        <service android:name="com.avira.android.GCMIntentService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.avira.android.antitheft.wipe.ATExternalStorageWatcherService" android:permission="com.avira.android.permission.INVOKE_WIPE_FEATURES"/>
+        <service android:enabled="true" android:exported="false" android:name="com.avira.android.antivirus.OnAccessScanService" android:process=":auto_scan"/>
+        <service android:label="secure_browsing_service_name" android:name="com.avira.android.securebrowsing.services.SBBookmarkChangeService"/>
+        <service android:label="fresh_install_flow_service_name" android:name="com.avira.android.FreshInstallFlowControllerService"/>
+        <service android:label="notify_app_update" android:name="com.avira.android.notifyappupdate.NotifyService"/>
+        <service android:exported="false" android:name="com.avira.android.idsafeguard.services.ISIntentService"/>
+        <service android:exported="false" android:name="com.avira.android.idsafeguard.services.ISDismissalIntentService"/>
+        <service android:exported="false" android:name="com.avira.android.idsafeguard.services.ISRecentBreachesIntentService"/>
+        <service android:exported="false" android:name="com.avira.android.sauth.SauthApiIntentService"/>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <service android:exported="false" android:name="com.avira.android.antitheft.lock.ATLockService"/>
+        <service android:exported="false" android:name="com.avira.android.iab.IABRequestService"/>
+        <receiver android:exported="true" android:name="com.avira.android.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.android.receivers.TestsReceiver">
+            <intent-filter>
+                <action android:name="com.avira.android.ACTION_TEST_FEATURE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avira.android.antivirus.scanscheduler.StartScanReceiver"/>
+        <receiver android:name="com.avira.android.antivirus.ScanNotificationActionReceiver"/>
+        <service android:name="com.avira.android.antivirus.scanscheduler.ScanSchedulerService"/>
+        <service android:exported="false" android:name="com.avira.android.device.DeviceInfoUpdateService"/>
+        <service android:name="com.avira.android.common.gcm.GcmIntentService"/>
+        <service android:name="com.avira.android.common.gcm.GcmRegisterIntentService"/>
+        <provider android:authorities="com.avira.android.utilities.FileProvider" android:enabled="false" android:exported="false" android:name="com.avira.android.utilities.FileProvider"/>
+        <provider android:authorities="com.avira.android.idsafeguard" android:exported="false" android:name="com.avira.android.idsafeguard.database.ISContentProvider"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="a94515aaeefeb83c5e025b869f96a50da370e715"/>
+        <activity android:name="com.mixpanel.android.surveys.SurveyActivity"/>
+        <receiver android:exported="true" android:name="com.mixpanel.android.mpmetrics.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

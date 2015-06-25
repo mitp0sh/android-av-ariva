@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/avira_red_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialogTitleIcon" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/LargerPaddingSize" android:scaleType="centerInside" android:contentDescription="@string/imageButtonContentDescription" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/default_header_text_color" android:id="@id/dialogTitleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/DefaultPaddingSize" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" />
+</LinearLayout>

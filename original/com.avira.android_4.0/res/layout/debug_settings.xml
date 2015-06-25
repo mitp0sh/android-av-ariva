@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/DisableScanSchedulerRefresh" android:key="@string/Key_PreferencesDisableScheduleRefresh" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/SendErrorLog" android:key="@string/Key_PreferencesSendErrorLog" />
+    <CheckBoxPreference android:id="@id/c2dmCheckbox" android:title="@string/SetC2DM" android:key="@string/Key_PreferencesCheckBoxC2DM" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/SetSimulateRebootWipe" android:key="@string/Key_PreferencesCheckboxWipeReboot" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/DemoWelcomeScreen" android:key="@string/Key_PreferencesWelcomeScreen" />
+    <PreferenceScreen android:title="@string/UnlinkApplication" android:key="@string/Key_PreferencesResetApplication" />
+    <PreferenceScreen android:title="Generate contact" android:key="@string/Key_PreferencesGenerateContact" />
+    <PreferenceScreen android:title="Generate SMS" android:key="@string/Key_PreferencesGenerateSms" />
+    <PreferenceScreen android:title="Generate call" android:key="@string/Key_PreferencesGenerateCall" />
+    <PreferenceScreen android:title="Set update server" android:key="@string/Key_PreferencesSetUpdateServer" />
+    <PreferenceScreen android:title="Update GCM id" android:key="@string/Key_PreferencesUpdateGCMId" />
+    <PreferenceScreen android:title="Test Remote Location" android:key="@string/Key_PreferencesTestRemoteLocation" />
+    <PreferenceScreen android:title="Debug Device Info" android:key="@string/Key_PreferencesDebugDeviceInfo" />
+    <PreferenceScreen android:title="VDF Update in 10s" android:key="@string/Key_PreferencesVdfUpdateSoon" />
+    <PreferenceScreen android:title="Display update notification" android:key="@string/Key_PreferencesUpdateNotify" />
+    <PreferenceScreen android:title="Display Web notification" android:key="@string/Key_PreferencesUpdateNotify2" />
+    <PreferenceScreen android:title="Display AOE notification" android:key="@string/Key_PreferencesUpdateNotify3" />
+    <PreferenceScreen android:title="@string/IABDebuggingForcePremium" android:key="@string/Key_IABDebuggingForcePremium" />
+    <PreferenceScreen android:title="@string/IABDebuggingSelectSKU" android:key="@string/Key_IABDebuggingSelectSKU" />
+    <PreferenceScreen android:title="@string/IABDebuggingToggleServerError" android:key="@string/Key_IABDebuggingToggleServerError" />
+    <PreferenceScreen android:title="Change the renew date to now" android:key="@string/Key_IABDebuggingSetADifferentRenewDate" />
+    <PreferenceScreen android:title="Write the IAB purchases on the sdcard" android:key="@string/Key_IABDebuggingWriteOrdersToSDCard" />
+    <PreferenceScreen android:title="Crash the app java mode" android:key="@string/Key_PreferencesCrashJava" />
+    <PreferenceScreen android:title="Crash the app native mode" android:key="@string/Key_PreferencesCrashNative" />
+    <PreferenceScreen android:title="Write the device info on the sdcard" android:key="@string/Key_IABDebuggingWriteDeviceToSDCard" />
+    <PreferenceScreen android:title="Send device info" android:key="@string/Key_SendDeviceInfo" />
+</PreferenceScreen>

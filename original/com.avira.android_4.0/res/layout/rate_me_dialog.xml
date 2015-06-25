@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_rate_me_dialog" android:paddingTop="@dimen/rateMeDialog_contentPaddingTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rateMeDialog_contentMargin" android:layout_below="@id/iv_icon">
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_title" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/XLPaddingSize" android:text="@string/rateMeDialog_title" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_dark_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_content" android:paddingLeft="@dimen/XLPaddingSize" android:paddingRight="@dimen/XLPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rateMeDialog_content_deviceScanned" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/XLPaddingSize" android:layout_marginBottom="@dimen/XLPaddingSize" android:src="@drawable/stars" />
+        <View style="@style/DashboardItemDivider" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_dark_gray" android:gravity="center" android:id="@id/btn_negative" android:background="@drawable/btn_left_rate_dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/rateMeDialog_negativeBtn" android:layout_weight="1.0" />
+            <View style="@style/HorizontalItemDivider" />
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_green" android:gravity="center" android:id="@id/btn_positive" android:background="@drawable/btn_right_rate_dialog" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="@string/rateMeDialog_possitiveBtn" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

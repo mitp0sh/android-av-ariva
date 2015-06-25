@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/features_toolbar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/features_toolbar_menu_btn" android:paddingLeft="@dimen/feature_toolbar_menu_icon_paddingLeftRight" android:paddingTop="@dimen/feature_toolbar_menu_icon_paddingTopBottom" android:paddingRight="@dimen/feature_toolbar_menu_icon_paddingLeftRight" android:paddingBottom="@dimen/feature_toolbar_menu_icon_paddingTopBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feature_toolbar_menu_icon_marginRight" android:src="@drawable/menu_button" android:layout_alignParentRight="true" android:contentDescription="@null" />
+</RelativeLayout>

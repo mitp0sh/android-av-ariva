@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avira.applock.common.ux.ParallaxListViewDashboard android:id="@id/parallax_listview_container" android:background="@color/activity_background_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/stub_plv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/bottom_plv_background_view" android:background="@color/activity_background_white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    <com.avira.applock.common.ux.ParallaxListView android:layout_gravity="center_horizontal" android:id="@id/parallax_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/general_horizontal_divider_light_gray" android:dividerHeight="@dimen/general_horizontal_divider_height" android:headerDividersEnabled="false" app:maxOverscrollDistance="@dimen/max_overscroll_distance" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ViewStub android:id="@id/stub_plv_non_hideable_top_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/stub_plv_hideable_top_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.avira.applock.common.ux.ParallaxListViewDashboard>

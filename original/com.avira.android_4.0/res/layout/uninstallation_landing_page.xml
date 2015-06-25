@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:contentDescription="@string/imageButtonContentDescription" style="@style/NavigationText" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corner" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.avira.android.KievitLightBoldTextView android:textSize="20.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/UninstallationLandingTitle" />
+                    <com.avira.android.KievitLightTextView android:textSize="@dimen/TwoLineSubTextSize" android:textColor="@color/black_body_text_color" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/UninstallationLandingInstruction" />
+                    <com.avira.android.KievitLightButton android:textSize="17.5sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/continueButton" android:background="@drawable/btn_dark_flat_rounded" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/LargerPaddingSize" android:text="@string/GoToUninstallation" style="@style/OEMessageDialogButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

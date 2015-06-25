@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/dashboard_item_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_medium_gray" android:gravity="start|center" android:id="@id/text" android:padding="@dimen/setting_checkbox_text_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Sample" android:layout_weight="1.0" />
+    <CheckBox android:gravity="center" android:id="@id/check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/setting_checkbox_margin" android:button="@drawable/btn_check_holo_light" />
+</LinearLayout>

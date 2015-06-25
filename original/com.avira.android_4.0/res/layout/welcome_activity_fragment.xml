@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/backgroundImage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <com.avira.android.KievitLightTextView android:textSize="35.5sp" android:textColor="@color/white_background_color" android:gravity="center" android:id="@id/welcomeTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-7.0dip" android:layout_marginBottom="@dimen/DefaultPaddingSize" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:lineSpacingExtra="-2.0sp" />
+        <com.avira.android.KievitLightTextView android:textAppearance="?android:textAppearanceSmall" android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/welcomeDescription" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginBottom="160.0dip" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:alpha="0.5" />
+    </LinearLayout>
+</RelativeLayout>

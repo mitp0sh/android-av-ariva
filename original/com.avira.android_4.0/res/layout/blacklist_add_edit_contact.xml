@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#dd000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:contentDescription="@string/imageButtonContentDescription" style="@style/NavigationText" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corner_white" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+            <com.avira.android.KievitLightEditText android:textSize="16.0sp" android:id="@id/contactNameEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/DefaultPaddingSize" android:hint="@string/Name" android:singleLine="true" android:drawableLeft="@drawable/blacklist_name" android:drawablePadding="10.0dip" android:inputType="textCapWords" />
+            <com.avira.android.KievitLightEditText android:textSize="16.0sp" android:id="@id/contactNumberEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/PhoneNumber" android:singleLine="true" android:digits="+1234567890" android:drawableLeft="@drawable/blacklist_phone" android:drawablePadding="10.0dip" android:inputType="phone" />
+            <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:id="@id/blacklist_sms_unavailable_warning" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />"
+<RadioGroup android:id="@id/blockingOptionRadioGroup" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <com.avira.android.KievitLightRadioButton android:textColor="@color/add_edit_block_contact_radio_btn_text_color" android:layout_gravity="left" android:id="@id/BlockingOptionsCallSms" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/CallSms" android:drawableRight="@android:drawable/btn_radio" />
+                <com.avira.android.KievitLightRadioButton android:textColor="@color/add_edit_block_contact_radio_btn_text_color" android:layout_gravity="left" android:id="@id/BlockingOptionsSms" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/Sms" android:drawableRight="@android:drawable/btn_radio" />
+                <com.avira.android.KievitLightRadioButton android:textColor="@color/add_edit_block_contact_radio_btn_text_color" android:layout_gravity="left" android:id="@id/BlockingOptionsCall" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="@null" android:text="@string/Calls" android:drawableRight="@android:drawable/btn_radio" />
+            </RadioGroup>
+            <com.avira.android.KievitLightButton android:id="@id/saveButton" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/Save" style="@style/DarkGrayButton" />
+            <com.avira.android.KievitLightButton android:id="@id/deleteButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Delete" style="@style/LightGrayButton" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

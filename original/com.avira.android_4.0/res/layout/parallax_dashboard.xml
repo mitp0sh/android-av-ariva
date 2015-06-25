@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avira.applock.common.ux.ParallaxDashboard android:id="@id/parallax_dashboard" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/stub_overscroll_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/bottom_background_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+    <com.avira.applock.common.ux.ParallaxScrollView android:id="@id/elastic_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:maxOverscrollDistance="@dimen/max_overscroll_distance">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ViewStub android:id="@id/stub_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <ViewStub android:id="@id/stub_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.avira.applock.common.ux.ParallaxScrollView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ViewStub android:id="@id/stub_non_hideable_top_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/stub_hideable_top_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.avira.applock.common.ux.ParallaxDashboard>

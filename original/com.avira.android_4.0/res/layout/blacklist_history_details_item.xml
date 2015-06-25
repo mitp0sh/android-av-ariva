@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white_background_color" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/deleteCheckbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/DefaultPaddingSize" />
+    <TableRow android:layout_gravity="center" android:orientation="horizontal" android:id="@id/contactInfoLayout" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/DefaultPaddingSize" android:layout_marginBottom="@dimen/DefaultPaddingSize" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/TwoLineMainTextSize" android:textColor="@color/black_body_text_color" android:gravity="center_vertical" android:id="@id/mainInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/TwoLineSubTextSize" android:textColor="@color/light_gray_text_color" android:gravity="center_vertical" android:id="@id/subInfo" android:paddingLeft="@dimen/DefaultPaddingSize" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </TableRow>
+</LinearLayout>

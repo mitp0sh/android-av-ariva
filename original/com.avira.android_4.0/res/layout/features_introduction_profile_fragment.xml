@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/introduction_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avira.android.KievitRegularBoldTextView android:textSize="@dimen/introduction_large_text" android:textColor="@android:color/white" android:gravity="center" android:id="@id/introduction_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/introduction_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginBottom="8.0dip" android:scaleType="centerInside" android:layout_above="@id/introduction_title" android:layout_centerHorizontal="true" android:contentDescription="@string/imageButtonContentDescription" />
+    <com.avira.android.KievitRegularTextView android:textSize="@dimen/introduction_small_text" android:textColor="@color/light_gray_text_color" android:gravity="center" android:id="@id/introduction_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/introduction_title" android:layout_centerHorizontal="true" android:alpha="0.7" />
+    <com.avira.android.KievitRegularTextView android:textSize="@dimen/introduction_small_text" android:textColor="@color/light_gray_text_color" android:gravity="center" android:id="@id/introduction_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:alpha="0.7" />
+</RelativeLayout>

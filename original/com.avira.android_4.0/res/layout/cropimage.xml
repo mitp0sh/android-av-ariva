@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <view android:id="@id/image" android:background="#55000000" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.avira.android.cropimage.CropImageView" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <com.avira.android.KievitRegularBoldTextView android:textSize="17.0sp" android:id="@id/cancel" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/LargerPaddingSize" android:text="@string/crop_new_photo" android:layout_weight="0.5" />
+            <com.avira.android.KievitRegularBoldTextView android:textSize="17.0sp" android:gravity="right" android:id="@id/use_image" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/LargerPaddingSize" android:text="@string/OK" android:layout_weight="0.5" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

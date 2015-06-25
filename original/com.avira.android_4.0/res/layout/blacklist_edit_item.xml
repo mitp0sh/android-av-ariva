@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/dialogHeader" layout="@layout/dialog_header" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/LargerPaddingSize" android:layout_marginTop="@dimen/DefaultPaddingSize" android:layout_marginRight="@dimen/LargerPaddingSize">
+            <TextView android:textColor="@color/black_body_text_color" android:id="@id/contactNameTextview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/DefaultPaddingSize" android:text="@string/Name" />
+            <EditText android:id="@id/contactNameEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapWords" />
+            <TextView android:textColor="@color/black_body_text_color" android:id="@id/contactNumberTextview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/PhoneNumber" />
+            <EditText android:id="@id/contactNumberEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:digits="+1234567890" android:inputType="phone" />
+            <TextView android:textColor="@color/black_body_text_color" android:id="@id/blockingOptionsTextview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/DefaultPaddingSize" android:text="@string/BlockingOptions" />
+            <RadioGroup android:id="@id/blockingOptionRadioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textColor="@color/black_body_text_color" android:id="@id/BlockingOptionsCallSms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/CallSms" />
+                <RadioButton android:textColor="@color/black_body_text_color" android:id="@id/BlockingOptionsCall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Calls" />
+                <RadioButton android:textColor="@color/black_body_text_color" android:id="@id/BlockingOptionsSms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Sms" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/saveButton" android:layout_width="fill_parent" android:text="@string/Save" android:layout_weight="1.0" style="@style/MessageDialogButton" />
+        <Button android:id="@id/cancelButton" android:layout_width="fill_parent" android:text="@string/Cancel" android:layout_weight="1.0" style="@style/MessageDialogButton" />
+    </LinearLayout>
+</LinearLayout>

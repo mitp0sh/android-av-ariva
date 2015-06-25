@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#dd000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:contentDescription="@string/imageButtonContentDescription" style="@style/NavigationText" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/black" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.avira.android.KievitLightButton android:id="@id/user_photo_select_gallery" android:text="@string/Gallery" style="@style/BlackListAddContactOptionButton" />
+        <com.avira.android.KievitLightButton android:id="@id/user_photo_select_camera" android:background="@drawable/blue_rounded_shape" android:text="@string/Camera" style="@style/BlackListAddContactOptionButton" />
+    </LinearLayout>
+</RelativeLayout>

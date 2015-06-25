@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/white_background_color" android:padding="@dimen/XLPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_title" android:textColor="@android:color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/XLPaddingSize" android:text="@string/NoNetworkAvailable" />
+    <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_dark_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_dialog_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/XLPaddingSize" android:text="@string/PleaseEnableNetwork" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_special_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center" android:background="@color/text_dark_gray" android:layout_width="@dimen/small_dialog_divider_width" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/XLPaddingSize" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/text_size_small" android:textColor="@color/text_dark_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_special_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/XLPaddingSize" android:text="@string/goto_settings" android:drawablePadding="@dimen/DefaultPaddingSize" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avira.android.KievitLightButton android:id="@id/btn_positive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/OK" android:layout_weight="1.0" style="@style/DarkGrayButton" />
+        <com.avira.android.KievitLightButton android:id="@id/btn_negative" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:text="@string/Cancel" android:layout_weight="1.0" style="@style/DarkGrayButton" />
+    </LinearLayout>
+</LinearLayout>

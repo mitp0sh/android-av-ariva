@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white_background_color" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/button_close_dark" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/XXLPaddingSize" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/idsafeguard_contacts_img_marginTop" android:src="@drawable/primary_ic_lock" android:contentDescription="@string/imageButtonContentDescription" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_contacts_header_title_text_size" android:textColor="@color/black_body_text_color" android:gravity="center" android:paddingLeft="@dimen/XXXXLPaddingSize" android:paddingTop="@dimen/idsafeguard_contacts_header_title_paddingTopBottom" android:paddingRight="@dimen/XXXXLPaddingSize" android:paddingBottom="@dimen/idsafeguard_contacts_header_title_paddingTopBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_safeguard_ftu_title" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_contacts_header_subtitle_text_size" android:textColor="#ffc0c0c0" android:gravity="center" android:paddingLeft="@dimen/XXXLPaddingSize" android:paddingTop="2.0dip" android:paddingRight="@dimen/XXXLPaddingSize" android:paddingBottom="@dimen/DefaultPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_safeguard_ftu_desc" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_contacts_header_subtitle_text_size" android:textColor="#ffc0c0c0" android:gravity="center" android:paddingLeft="@dimen/XXXLPaddingSize" android:paddingTop="2.0dip" android:paddingRight="@dimen/XXXLPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_safeguard_menu_scan_information" />
+        <include layout="@layout/generic_filler_view" />
+    </LinearLayout>
+</RelativeLayout>

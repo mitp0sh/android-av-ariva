@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/white_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/titleImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/antitheft_scream_icon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.avira.android.KievitLightTextView android:textSize="25.0sp" android:textColor="@color/black_body_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/screamTitle" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ScreamHeader" />
+        <com.avira.android.KievitRegularTextView android:textSize="15.0sp" android:textColor="#ffc0c0c0" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/screamDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ScreamWillLast20Seconds" style="@style/DefaultBodyText" />
+    </LinearLayout>
+</LinearLayout>

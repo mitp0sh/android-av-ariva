@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white_background_color" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_breach_info_title_text_size" android:textColor="@color/black_body_text_color" android:gravity="center" android:padding="@dimen/id_safeguard_breach_info_title_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargerPaddingSize" android:text="@string/id_safeguard_breach_title" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/breached_company_name_and_date_text_size" android:textColor="@color/black_body_text_color" android:gravity="center" android:id="@id/breached_company_name_and_date" android:paddingLeft="@dimen/idsafeguard_breach_name_paddingLeftRight" android:paddingTop="@dimen/idsafeguard_breach_name_date_paddingTop" android:paddingRight="@dimen/idsafeguard_breach_name_paddingLeftRight" android:paddingBottom="@dimen/idsafeguard_breach_name_date_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/breached_company_details_text_size" android:textColor="@color/menu_value_text_color" android:gravity="center_vertical" android:id="@id/breached_company_details" android:paddingLeft="@dimen/idsafeguard_breach_details_paddingLeftRight" android:paddingRight="@dimen/idsafeguard_breach_details_paddingLeftRight" android:paddingBottom="@dimen/idsafeguard_breach_details_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

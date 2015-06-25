@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/button_close" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corner" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.avira.android.KievitLightTextView android:textSize="22.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/helpTextView" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/Help" />
+                    <RelativeLayout android:orientation="vertical" android:id="@id/supportLayout" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/supportTextView" android:padding="@dimen/DefaultPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AviraAnswers" android:layout_alignParentLeft="true" />
+                        <com.avira.android.KievitLightTextView android:textSize="21.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/DefaultPaddingSize" android:text="@string/GreaterThan" android:layout_alignBaseline="@id/supportTextView" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="vertical" android:id="@id/uninstallLayout" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/uninstallTextView" android:padding="@dimen/DefaultPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Uninstall" android:layout_alignParentLeft="true" />
+                        <com.avira.android.KievitLightTextView android:textSize="21.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/DefaultPaddingSize" android:text="@string/GreaterThan" android:layout_alignBaseline="@id/uninstallTextView" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:orientation="vertical" android:id="@id/aboutLayout" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                        <com.avira.android.KievitLightTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/aboutTextView" android:padding="@dimen/DefaultPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/About" android:layout_alignParentLeft="true" />
+                        <com.avira.android.KievitLightTextView android:textSize="21.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/DefaultPaddingSize" android:text="@string/GreaterThan" android:layout_alignBaseline="@id/aboutTextView" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.avira.android.KievitRegularBoldTextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/refreshText" android:padding="@dimen/LargerPaddingSize" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargerPaddingSize" android:layout_marginRight="@dimen/LargerPaddingSize" android:text="@string/Refresh" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressBarWheel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                <com.avira.android.KievitRegularBoldTextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/inlineText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="50.0dip" />
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

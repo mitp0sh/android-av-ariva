@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white_background_color" android:paddingLeft="@dimen/LargerPaddingSize" android:paddingTop="@dimen/DefaultPaddingSize" android:paddingRight="@dimen/LargerPaddingSize" android:paddingBottom="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.avira.android.KievitRegularBoldTextView android:textSize="18.0sp" android:textColor="#ff333333" android:layout_gravity="left" android:id="@id/blacklist_name" android:paddingBottom="@dimen/DefaultPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.avira.android.KievitRegularTextView android:textSize="15.0sp" android:textColor="#ffa0a0a0" android:layout_gravity="left" android:id="@id/blacklist_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

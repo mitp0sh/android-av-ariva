@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/scanResultLayout" android:background="#ccdddddd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/noProblemLayout" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/attention_protected" android:contentDescription="@string/imageButtonContentDescription" />
+        <com.avira.android.KievitLightTextView android:textSize="20.0sp" android:textColor="#ff363636" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NoProblemDetected" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/problemLayout" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/attention_unproctected" android:contentDescription="@string/imageButtonContentDescription" />
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.avira.android.KievitLightTextView android:textSize="20.0sp" android:textColor="#ff363636" android:id="@id/problemCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ProblemsDetected" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

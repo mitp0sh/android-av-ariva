@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/banner_header" />
+    <LinearLayout android:id="@id/tabRow" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageButton android:gravity="center" android:layout_gravity="end" android:id="@id/menuButton" android:background="@color/light_gray_background_color" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/menu" android:contentDescription="@string/imageButtonContentDescription" />
+    </LinearLayout>
+    <View android:background="@color/white_background_color" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <View android:background="@color/listview_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fragmentContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

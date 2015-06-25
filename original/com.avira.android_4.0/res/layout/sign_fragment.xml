@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/padding_huge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/icon" android:padding="@dimen/padding_huge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        <com.avira.android.KievitLightBoldTextView android:textSize="@dimen/font_size_huge" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/default_font_size" android:gravity="center" android:id="@id/summary" android:paddingTop="@dimen/padding_huge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.avira.android.KievitLightTextView android:gravity="center_horizontal" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

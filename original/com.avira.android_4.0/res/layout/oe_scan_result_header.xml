@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/oe_scan_state_icon" android:background="@drawable/rounded_corner_red" android:padding="10.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/scan_logo_unsafe" android:contentDescription="@string/imageButtonContentDescription" />
+    <com.avira.android.KievitLightTextView android:layout_gravity="center" android:id="@id/oe_scan_state_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oe_scan_result_issues_detected" style="@style/av_sr_result_title" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

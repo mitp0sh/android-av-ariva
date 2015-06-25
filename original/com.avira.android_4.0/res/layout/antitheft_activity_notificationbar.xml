@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/deviceAdminAlertLayout" android:background="#ccdddddd" android:padding="@dimen/LargerPaddingSize" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/attention_unproctected" android:contentDescription="@string/imageButtonContentDescription" />
+    <com.avira.android.KievitLightTextView android:textSize="20.0sp" android:textColor="#ff363636" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dashboard_settings_dev_admin_disabled" />
+</LinearLayout>

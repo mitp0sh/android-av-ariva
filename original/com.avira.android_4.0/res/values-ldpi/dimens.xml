@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dashboard_shadowbg_size">83.5dip</dimen>
+    <dimen name="dashboard_profile_picture">80.0dip</dimen>
+    <dimen name="dashboard_toppanel_padding_bottom">5.0dip</dimen>
+    <dimen name="dashboard_toppanel_margin_top">40.0dip</dimen>
+    <dimen name="com_facebook_picker_divider_width">1.0px</dimen>
+    <dimen name="welcomeFeatureNameTextSizeHorizontal">14.0dip</dimen>
+</resources>

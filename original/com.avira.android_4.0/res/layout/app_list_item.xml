@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/activity_background_white" android:padding="@dimen/app_list_item_layout_padding" android:layout_width="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center|left" android:id="@id/applist_list_item_icon" android:padding="@dimen/app_list_screen_logo_padding" android:layout_width="@dimen/app_list_screen_logo_size" android:layout_height="@dimen/app_list_screen_logo_size" android:contentDescription="@null" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_list_item_name_margin" android:layout_marginRight="@dimen/app_list_item_name_margin" android:layout_weight="1.0">
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/app_list_item_name_text_size" android:textColor="@color/text_enabled_black" android:ellipsize="end" android:id="@id/applist_list_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/app_list_item_desc_text_size" android:textColor="@color/text_enabled_gray" android:id="@id/applist_list_item_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <CheckBox android:id="@id/applist_list_item_checkbox" style="@style/GeneralUnclickableCheckbox" />
+</LinearLayout>

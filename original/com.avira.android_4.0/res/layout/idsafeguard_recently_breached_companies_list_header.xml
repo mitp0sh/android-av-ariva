@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white_background_color" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/button_close_dark" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/XXLPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_contacts_header_title_text_size" android:textColor="@color/black_body_text_color" android:gravity="center" android:paddingLeft="@dimen/XXXXLPaddingSize" android:paddingTop="@dimen/idsafeguard_contacts_header_title_paddingTopBottom" android:paddingRight="@dimen/XXXXLPaddingSize" android:paddingBottom="@dimen/idsafeguard_contacts_header_title_paddingTopBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_safeguard_recent_breach_title" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_contacts_header_subtitle_text_size" android:textColor="#ffc0c0c0" android:gravity="center" android:paddingLeft="@dimen/XXXLPaddingSize" android:paddingTop="2.0dip" android:paddingRight="@dimen/XXXLPaddingSize" android:paddingBottom="@dimen/idsafeguard_header_subtitle_paddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_safeguard_recent_breach_desc" />
+    </LinearLayout>
+</RelativeLayout>

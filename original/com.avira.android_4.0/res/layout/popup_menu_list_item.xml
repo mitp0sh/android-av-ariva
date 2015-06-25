@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.avira.android.KievitLightTextView android:textSize="@dimen/popup_menu_list_item_text_size" android:textColor="@color/menu_dialog_text_black" android:gravity="center_vertical" android:padding="@dimen/popup_menu_list_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/popup_menu_list_item_minHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

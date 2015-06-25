@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/settings_header_layout" android:paddingTop="@dimen/feature_dashboard_toppanel_padding" android:paddingBottom="@dimen/feature_dashboard_bottompanel_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/applock_icon" android:contentDescription="@null" />
+    <com.avira.android.KievitLightTextView android:textSize="@dimen/settings_header_title_text_size" android:textColor="@color/activity_title_text_black" android:paddingLeft="@dimen/settings_header_title_paddingLeftRight" android:paddingTop="@dimen/settings_header_title_paddingTopBottom" android:paddingRight="@dimen/settings_header_title_paddingLeftRight" android:paddingBottom="@dimen/settings_header_title_paddingTopBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_screen_title" />
+</LinearLayout>

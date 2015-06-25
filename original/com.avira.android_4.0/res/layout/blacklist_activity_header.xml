@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/feature_dashboard_toppanel_padding" android:paddingBottom="@dimen/feature_dashboard_bottompanel_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blacklist_icon" android:contentDescription="@string/imageButtonContentDescription" />
+    <com.avira.android.KievitLightTextView android:textSize="@dimen/main_screen_large_font" android:textColor="@color/white_text_color" android:layout_gravity="center" android:id="@id/blacklistDescription" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NoOfBlacklisted" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.avira.android.KievitLightTextView android:textSize="15.0sp" android:textColor="@color/white_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.avira.android.KievitLightButton android:textSize="17.5sp" android:textColor="@color/white_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/addContact" android:background="@drawable/btn_dark_flat_oval" android:paddingLeft="25.0dip" android:paddingTop="12.0dip" android:paddingRight="25.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AddContactsToYourlist" />
+    </LinearLayout>
+</LinearLayout>

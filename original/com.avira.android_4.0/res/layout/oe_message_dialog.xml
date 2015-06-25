@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white_background_color" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/dialogHeader" layout="@layout/oe_dialog_header" />
+    <ScrollView android:id="@id/MessageDialogContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="false" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/MessageDialogNonScrollableContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonsLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0sp" android:layout_marginTop="10.0sp" android:layout_marginRight="20.0sp" android:layout_marginBottom="15.0sp">
+        <com.avira.android.KievitLightButton android:id="@id/dialogOkButton" android:visibility="gone" android:text="@string/OK" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+        <com.avira.android.KievitLightButton android:id="@id/dialogSaveButton" android:visibility="gone" android:text="@string/Save" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+        <com.avira.android.KievitLightButton android:id="@id/dialogUninstallButton" android:visibility="gone" android:text="@string/Uninstall" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+        <com.avira.android.KievitLightButton android:id="@id/dialogDeleteButton" android:visibility="gone" android:text="@string/Delete" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+        <com.avira.android.KievitLightButton android:id="@id/dialogCloseButton" android:visibility="gone" android:text="@string/Close" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+        <com.avira.android.KievitLightButton android:id="@id/dialogCancelButton" android:visibility="gone" android:text="@string/Cancel" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+        <com.avira.android.KievitLightButton android:id="@id/dialogYesButton" android:visibility="gone" android:text="@string/Yes" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+        <com.avira.android.KievitLightButton android:id="@id/dialogNoButton" android:visibility="gone" android:text="@string/No" android:layout_weight="1.0" style="@style/OEMessageDialogButton" />
+    </LinearLayout>
+</LinearLayout>

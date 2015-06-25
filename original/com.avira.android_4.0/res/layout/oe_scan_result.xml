@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/scanResultList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:layout_weight="1.0" />
+    <include layout="@layout/oe_scan_result_header" />
+    <ImageButton android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/imageButtonContentDescription" style="@style/av_sr_result_close" />
+</FrameLayout>

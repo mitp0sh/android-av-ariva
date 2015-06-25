@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/parallax_dashboard" />
+            <ImageView android:id="@id/scan_progress_half_screen" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/scan_progress" android:scaleType="fitEnd" android:contentDescription="@string/imageButtonContentDescription" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="start" android:orientation="vertical" android:id="@id/drawer_content_layout" android:background="@color/drawer_default" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.avira.applock.common.ux.ElasticScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:maxOverscrollDistance="@dimen/max_overscroll_distance">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/dashboard_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dashboard_drawer_image_margintop" android:layout_marginBottom="@dimen/drawer_icon_margin_bottom" android:src="@drawable/dashboard_icon" android:contentDescription="@string/imageButtonContentDescription" style="@style/DashboardItemAlert" />
+                    <View android:background="@drawable/settings_divider" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_divider_height" />
+                    <LinearLayout android:id="@id/edit_profile_option" style="@style/DrawerButton">
+                        <ImageView android:background="@drawable/profile_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/drawer_item_image_margin" android:layout_marginRight="@dimen/drawer_item_image_margin_right" android:contentDescription="@string/imageButtonContentDescription" />
+                        <com.avira.android.KievitLightTextView android:textSize="@dimen/drawer_text_size_title" android:textColor="@color/menu_value_text_color" android:gravity="center|left" android:id="@id/text_view_my_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MyProfile" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                    </LinearLayout>
+                    <View android:background="@drawable/settings_divider" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_divider_height" />
+                    <LinearLayout android:id="@id/settings_option" style="@style/DrawerButton">
+                        <ImageView android:background="@drawable/settings_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/drawer_item_image_margin" android:layout_marginRight="@dimen/drawer_item_image_margin_right" android:contentDescription="@string/imageButtonContentDescription" />
+                        <com.avira.android.KievitLightTextView android:textSize="@dimen/drawer_text_size_title" android:textColor="@color/menu_value_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Settings" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                    </LinearLayout>
+                    <View android:background="@drawable/settings_divider" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_divider_height" />
+                    <LinearLayout android:id="@id/help_option" style="@style/DrawerButton">
+                        <ImageView android:background="@drawable/support_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/drawer_item_image_margin" android:layout_marginRight="@dimen/drawer_item_image_margin_right" android:contentDescription="@string/imageButtonContentDescription" />
+                        <com.avira.android.KievitLightTextView android:textSize="@dimen/drawer_text_size_title" android:textColor="@color/menu_value_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Help" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                    </LinearLayout>
+                    <View android:background="@drawable/settings_divider" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_divider_height" />
+                    <LinearLayout android:id="@id/rate_app_option" style="@style/DrawerButton">
+                        <ImageView android:background="@drawable/dashboard_drawer_rate_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/drawer_item_image_margin" android:layout_marginRight="@dimen/drawer_item_image_margin_right" android:contentDescription="@string/imageButtonContentDescription" />
+                        <com.avira.android.KievitLightTextView android:textSize="@dimen/drawer_text_size_title" android:textColor="@color/menu_value_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dashboard_menu_rate_app" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                    </LinearLayout>
+                    <View android:background="@drawable/settings_divider" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_divider_height" />
+                    <LinearLayout android:id="@id/premium_option" style="@style/DrawerButton">
+                        <ImageView android:background="@drawable/premium_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/drawer_item_image_margin" android:layout_marginRight="@dimen/drawer_item_image_margin_right" android:contentDescription="@string/imageButtonContentDescription" />
+                        <com.avira.android.KievitLightTextView android:textSize="@dimen/drawer_text_size_title" android:textColor="@color/menu_value_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Premium" android:shadowColor="@color/text_shadow" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" />
+                    </LinearLayout>
+                    <View android:id="@id/premium_option_divider" android:background="@drawable/settings_divider" android:layout_width="fill_parent" android:layout_height="@dimen/drawer_divider_height" android:layout_marginBottom="@dimen/drawer_premium_divider_margin_bottom" />
+                    <com.avira.android.KievitLightButton android:layout_gravity="center" android:id="@id/upgrade_to_pro" android:layout_marginLeft="@dimen/drawer_premium_button_gap_margin" android:layout_marginTop="@dimen/drawer_premium_button_gap_margin" android:layout_marginRight="@dimen/drawer_premium_button_gap_margin" android:layout_marginBottom="@dimen/drawer_premium_button_gap_margin_bottom" android:text="@string/Upgrade" style="@style/RedButton" />
+                    <com.avira.android.KievitLightTextView android:textSize="@dimen/dashboard_upgrade_to_pro_desc_text_size" android:textColor="@color/drawer_upgrade_button_font_color" android:gravity="center" android:layout_gravity="center" android:id="@id/upgrade_to_pro_desc" android:padding="@dimen/drawer_premium_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/drawer_premium_button_gap_margin" android:layout_marginRight="@dimen/drawer_premium_button_gap_margin" android:layout_marginBottom="@dimen/drawer_premium_button_gap_margin" android:text="@string/dashboard_upgrade_to_pro_desc" />
+                </LinearLayout>
+            </com.avira.applock.common.ux.ElasticScrollView>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+    <com.avira.android.ux.BlockerView android:id="@id/blocker_view" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

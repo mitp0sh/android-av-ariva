@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/generic_filler_view" />
+    <ImageView android:id="@id/iab_profile_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_icon" android:minWidth="150.0dip" android:minHeight="150.0dip" android:layout_weight="1.0" />
+    <com.avira.android.KievitLightTextView android:textSize="22.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/iab_landing_title" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="@string/iab_welcome_title" android:layout_weight="1.0" />
+    <com.avira.android.KievitLightTextView android:textSize="15.0sp" android:textColor="@color/text_dark_gray" android:gravity="center" android:id="@id/iab_landing_details" android:layout_width="250.0dip" android:layout_height="wrap_content" android:text="@string/iab_welcome_details_after_login" android:layout_weight="1.0" />
+    <include layout="@layout/generic_filler_view" />
+    <View android:background="@color/gray_on_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <com.avira.android.KievitLightButton android:textColor="@color/text_dark_gray" android:id="@id/iab_welcome_action" android:background="@drawable/btn_transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/iab_welcome_action" android:layout_weight="1.0" />
+</LinearLayout>

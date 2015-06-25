@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_divider" style="@style/DashboardItemDivider" />
+    <RelativeLayout style="@style/DashboardItemBackground">
+        <ImageView android:id="@id/dashboard_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/imageButtonContentDescription" style="@style/DashboardItemIcon" />
+        <com.avira.android.KievitLightTextView android:layout_gravity="center" android:id="@id/dashboard_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/dashboard_item_image" android:layout_alignTop="@id/dashboard_item_image" style="@style/DashboardItemTitle" />
+        <com.avira.android.KievitLightBoldTextView android:id="@id/dashboard_item_premium_tag" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/premium_pro" android:layout_toRightOf="@id/dashboard_item_title" style="@style/DashboardItemPremiumTag" />
+        <com.avira.android.KievitLightTextView android:id="@id/dashboard_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/XXXLPaddingSize" android:layout_below="@id/dashboard_item_title" android:layout_alignLeft="@id/dashboard_item_title" style="@style/DashboardItemDesc" />
+        <ImageView android:id="@id/dashboard_item_alert_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/attention_unproctected" android:contentDescription="@string/imageButtonContentDescription" style="@style/DashboardItemAlert" />
+    </RelativeLayout>
+</LinearLayout>

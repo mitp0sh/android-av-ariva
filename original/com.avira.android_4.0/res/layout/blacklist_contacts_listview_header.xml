@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/setting_block_private_call" layout="@layout/item_setting_checkbox" />
+    <include android:id="@id/setting_block_unknown_number" layout="@layout/item_setting_checkbox" />
+</LinearLayout>

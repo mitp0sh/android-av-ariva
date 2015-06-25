@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:contentDescription="@string/imageButtonContentDescription" style="@style/NavigationText" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/black" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.avira.android.KievitLightButton android:id="@id/btn_block_private_callers" android:text="@string/block_private_caller" style="@style/BlackListAddContactOptionButton" />
+        <com.avira.android.KievitLightButton android:id="@id/btn_block_unknown_numbers" android:text="@string/block_unknown_numbers" style="@style/BlackListAddContactOptionButton" />
+        <com.avira.android.KievitLightButton android:id="@id/add_from_contacts" android:text="@string/AddBlacklistFromContact" style="@style/BlackListAddContactOptionButton" />
+        <com.avira.android.KievitLightButton android:id="@id/add_from_call_logs" android:text="@string/AddBlacklistFromCallLog" style="@style/BlackListAddContactOptionButton" />
+        <com.avira.android.KievitLightButton android:id="@id/add_from_sms_logs" android:text="@string/AddBlacklistFromSmsLog" style="@style/BlackListAddContactOptionButton" />
+        <com.avira.android.KievitLightButton android:id="@id/create_new" android:text="@string/AddBlacklistCreateNew" style="@style/BlackListAddContactOptionButton" />
+    </LinearLayout>
+</RelativeLayout>

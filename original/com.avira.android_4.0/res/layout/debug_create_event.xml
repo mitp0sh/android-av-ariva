@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Contact number" />
+        <EditText android:id="@id/contactNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:digits="+1234567890" android:inputType="phone" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Number of events" />
+        <EditText android:id="@id/numberEvents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <TableRow android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/dialogOkButton" android:text="@string/OK" android:layout_weight="1.0" style="@style/MessageDialogButton" />
+        <Button android:id="@id/dialogCancelButton" android:text="@string/Cancel" android:layout_weight="1.0" style="@style/MessageDialogButton" />
+    </TableRow>
+</LinearLayout>

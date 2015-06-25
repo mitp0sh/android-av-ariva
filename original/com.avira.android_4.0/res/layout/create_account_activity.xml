@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:padding="@dimen/DefaultPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:layout_centerVertical="true" android:contentDescription="@string/imageButtonContentDescription" style="@style/NavigationText" />
+        <com.avira.android.KievitRegularBoldTextView android:id="@id/create_account_next" android:text="@string/Next" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NavigationText" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corner" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.avira.android.KievitLightTextView android:textSize="22.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_account" />
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.avira.android.KievitLightAutoCompleteTextView android:id="@id/registration_email_address" android:background="#00000000" android:hint="@string/registration_email" android:maxLines="1" android:completionThreshold="1" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/EmailInputEditor" />
+                    <View style="@style/EditTextUnderline" />
+                    <com.avira.android.KievitLightTextView android:id="@id/emailVerificationTextView" android:visibility="gone" android:text="@string/registration_invalid_email_format" style="@style/EditTextInlineError" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.avira.android.KievitLightAutoCompleteTextView android:id="@id/registration_password" android:background="#00000000" android:hint="@string/registration_password" android:maxLines="1" android:maxLength="100" android:completionThreshold="1" android:inputType="textPassword" android:imeOptions="actionNext" style="@style/EmailInputEditor" />
+                    <View style="@style/EditTextUnderline" />
+                    <com.avira.android.KievitLightTextView android:id="@id/passwordVerificationTextView" android:visibility="gone" style="@style/EditTextInlineError" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/LargerPaddingSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                    <com.avira.android.KievitLightAutoCompleteTextView android:id="@id/registration_confirm_password" android:background="#00000000" android:hint="@string/registration_confirm_password" android:maxLines="1" android:maxLength="100" android:completionThreshold="1" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/EmailInputEditor" />
+                    <View style="@style/EditTextUnderline" />
+                    <com.avira.android.KievitLightTextView android:id="@id/passwordMatchViolationTextView" android:visibility="gone" android:text="@string/registration_password_mismatch" style="@style/EditTextInlineError" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargerPaddingSize" android:layout_marginRight="@dimen/LargerPaddingSize">
+                <com.avira.android.KievitRegularBoldTextView android:textSize="13.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_eula_description" />
+                <com.avira.android.KievitRegularBoldTextView android:textSize="13.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/eulaLinkTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_eula_link" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

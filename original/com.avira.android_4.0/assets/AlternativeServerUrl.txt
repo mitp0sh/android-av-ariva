@@ -1,0 +1,1 @@
+https://api.mobiletest.avira.com/android/v1/

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dashboard_item_bg_color" android:padding="@dimen/LargerPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/idsafeguard_listitem_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/idsafeguard_listItem_paddingLeftRight" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_item_text_size" android:textColor="@color/black_body_text_color" android:gravity="center_vertical" android:id="@id/idsafeguard_listitem_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/idsafeguard_item_marginLeft" />
+        <com.avira.android.KievitLightTextView android:textSize="@dimen/idsafeguard_item_subtext_size" android:textColor="@color/menu_value_text_color" android:gravity="center_vertical" android:id="@id/idsafeguard_listitem_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/idsafeguard_item_marginLeft" />
+    </LinearLayout>
+    <ImageView android:id="@id/idsafeguard_listitem_state" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/idsafeguard_item_marginRight" android:contentDescription="@string/imageButtonContentDescription" />
+</LinearLayout>

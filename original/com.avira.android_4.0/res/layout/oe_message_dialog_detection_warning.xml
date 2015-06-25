@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/fileIcon" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.avira.android.KievitLightTextView android:textColor="@color/black_body_text_color" android:gravity="center" android:id="@id/fileName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        <com.avira.android.KievitLightTextView android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/malwareList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

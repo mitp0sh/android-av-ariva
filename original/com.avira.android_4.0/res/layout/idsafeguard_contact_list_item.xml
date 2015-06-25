@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/idsafeguard_email_contact_option_layout" android:background="@color/identity_safeguard_light_gray" android:visibility="visible" android:weightSum="1.0" style="@style/IdentitySafeguardContactItemBackground">
+        <ImageView android:id="@id/identity_safeguard_contact_email_icon" android:layout_marginLeft="20.0dip" android:src="@drawable/idsafeguard_contact_item_email_action" style="@style/IdentitySafeguardContactItemIcon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/idsafeguard_delete_contact_option_layout" android:background="@color/identity_safeguard_light_gray" android:visibility="visible" android:weightSum="1.0" style="@style/IdentitySafeguardContactItemBackground">
+        <ImageView android:id="@id/identity_safeguard_contact_delete_icon" android:layout_marginRight="20.0dip" android:src="@drawable/idsafeguard_contact_item_delete_action" style="@style/IdentitySafeguardContactItemIcon" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/idsafeguard_contact_info_layout" android:background="@color/identity_safeguard_item_bg_color" android:padding="5.0dip" android:clickable="true" android:baselineAligned="false" android:weightSum="1.0" style="@style/IdentitySafeguardContactItemBackground">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.avira.android.KievitLightTextView android:id="@id/idsafeguard_contact_email" style="@style/IdentitySafeguardContactItemTitle" />
+            <com.avira.android.KievitLightTextView android:id="@id/idsafeguard_number_of_contact_breach_desc" style="@style/IdentitySafeguardContactItemDesc" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/identity_safeguard_contact_alert_status" android:src="@drawable/attention_unproctected" style="@style/IdentitySafeguardContactItemAlert" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

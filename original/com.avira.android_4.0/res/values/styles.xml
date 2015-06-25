@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GeneralHorizontalDivider">
+        <item name="android:background">@color/general_horizontal_divider_light_gray</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/general_horizontal_divider_height</item>
+    </style>
+    <style name="GeneralUnclickableCheckbox">
+        <item name="android:layout_gravity">center|right</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/custom_checkbox_states</item>
+        <item name="android:maxWidth">@dimen/general_checkbox_size</item>
+        <item name="android:maxHeight">@dimen/general_checkbox_size</item>
+    </style>
+    <style name="DarkGrayButton">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_dark_flat_rounded</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="DialogNoTitle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MenuItemText">
+        <item name="android:textSize">@dimen/menu_text_size</item>
+        <item name="android:textColor">@color/menu_dialog_text_black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/menu_item_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="UserInputScreenNumpad">
+        <item name="android:textSize">@dimen/userInputScreen_numpad_text_size</item>
+        <item name="android:textColor">@color/numpad_text_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/numpad_pressed_effect</item>
+        <item name="android:paddingTop">@dimen/userInputScreen_numpad_paddingTopBottom</item>
+        <item name="android:paddingBottom">@dimen/userInputScreen_numpad_paddingTopBottom</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="com_facebook_loginview_default_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">@dimen/com_facebook_loginview_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/com_facebook_loginview_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_button_blue</item>
+        <item name="android:paddingLeft">@dimen/com_facebook_loginview_padding_left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="com_facebook_loginview_silver_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4b5164</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/com_facebook_loginbutton_silver</item>
+        <item name="android:height">44.0dip</item>
+        <item name="android:width">205.0dip</item>
+    </style>
+    <style name="tooltip_bubble_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+    <style name="DefaultButton">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+    </style>
+    <style name="ButtonLight" parent="@style/DefaultButton">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/transparent_light_rounded_shape</item>
+    </style>
+    <style name="ButtonDark" parent="@style/DefaultButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/transparent_dark_rounded_shape</item>
+    </style>
+    <style name="ButtonTransparent" parent="@style/DefaultButton">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="DefaultBodyText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/default_body_text_color</item>
+    </style>
+    <style name="FullWidthStandardTextview">
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FullWidthStandardBoldTextview">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="StandardButton">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MessageDialogButton">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:layout_width">100.0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="OEMessageDialogButton">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:padding">12.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:minWidth">120.0sp</item>
+    </style>
+    <style name="LightGrayButton">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:textColor">@color/text_medium_gray</item>
+        <item name="android:background">@drawable/btn_light</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="RedButton">
+        <item name="android:textSize">@dimen/dashboard_upgrade_to_pro_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_rounded_red</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/dashboard_upgrade_btn_min_width</item>
+    </style>
+    <style name="DrawerButton">
+        <item name="android:background">@drawable/btn_drawable_menu</item>
+        <item name="android:paddingTop">16.25dip</item>
+        <item name="android:paddingBottom">16.25dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EmailInputEditor">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+    <style name="AntivirusItemBackground">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/dashboard_item_bg_color</item>
+        <item name="android:padding">@dimen/LargerPaddingSize</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/antivirus_layout_height</item>
+    </style>
+    <style name="AntivirusItemTitle">
+        <item name="android:textSize">@dimen/antivirus_item_text_size</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">@dimen/DefaultPaddingSize</item>
+        <item name="android:paddingTop">@dimen/DefaultPaddingSize</item>
+        <item name="android:paddingRight">@dimen/DefaultPaddingSize</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/antivirus_item_marginLeft</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="AntivirusItemValue">
+        <item name="android:gravity">center|right</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:paddingTop">@dimen/DefaultPaddingSize</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/antivirus_item_marginRight</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="DashboardItemBackground">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/dashboard_item_bg_color</item>
+        <item name="android:padding">@dimen/IntermediatePaddingSize</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dashboard_item_height</item>
+    </style>
+    <style name="DashboardItemIcon">
+        <item name="android:padding">@dimen/DefaultPaddingSize</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:contentDescription">@string/imageButtonContentDescription</item>
+    </style>
+    <style name="DashboardItemTitle">
+        <item name="android:textSize">@dimen/dashboard_item_title_text_size</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">@dimen/dashboard_item_title_marginLeft</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="DashboardItemPremiumTag">
+        <item name="android:textSize">@dimen/dashboard_item_desc_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/less_rounded_corner_red</item>
+        <item name="android:paddingLeft">@dimen/dashboard_item_premium_tag_paddingLeftRight</item>
+        <item name="android:paddingRight">@dimen/dashboard_item_premium_tag_paddingLeftRight</item>
+        <item name="android:layout_margin">@dimen/dashboard_item_premium_tag_margin</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="DashboardItemDesc">
+        <item name="android:textSize">@dimen/dashboard_item_desc_text_size</item>
+        <item name="android:textColor">@color/menu_value_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="AntiTheftItemBackground">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/dashboard_item_bg_color</item>
+        <item name="android:padding">@dimen/LargerPaddingSize</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/antitheft_layout_minHeight</item>
+    </style>
+    <style name="AntiTheftItemTitle">
+        <item name="android:textSize">@dimen/antitheft_item_text_size</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/DefaultPaddingSize</item>
+        <item name="android:layout_marginLeft">@dimen/antitheft_item_marginLeft</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AntiTheftItemDesc">
+        <item name="android:textSize">@dimen/antitheft_item_subtext_size</item>
+        <item name="android:textColor">#ff929292</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/DefaultPaddingSize</item>
+        <item name="android:layout_marginLeft">@dimen/antitheft_item_marginLeft</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="DashboardItemAlert">
+        <item name="android:padding">@dimen/dashboard_item_alert_padding</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:contentDescription">@string/imageButtonContentDescription</item>
+    </style>
+    <style name="DashboardItemDivider">
+        <item name="android:background">@color/menu_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="HorizontalItemDivider">
+        <item name="android:background">@color/menu_divider</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="EditTextUnderline">
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+    </style>
+    <style name="EditTextInlineError">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/error_text_color</item>
+        <item name="android:paddingTop">@dimen/DefaultPaddingSize</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FooterLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/lock_screen_footer_background_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Theme.CustomTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:backgroundDimAmount">0.9</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="NavigationText">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">20.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="BlackListAddContactOptionButton">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/btn_dark_flat_rounded</item>
+        <item name="android:padding">15.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+    </style>
+    <style name="DarkKeyboardButton">
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_dark_flat_rounded</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:layout_margin">3.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="SingleLineEllipsize">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="IdentitySafeguardContactItemTitle">
+        <item name="android:textSize">@dimen/idsafeguard_contact_email_text_size</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/idsafeguard_contact_item_text_paddingLeft</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="IdentitySafeguardContactItemDesc">
+        <item name="android:textSize">@dimen/idsafeguard_number_of_contact_breach_desc_text_size</item>
+        <item name="android:textColor">#ff929292</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/idsafeguard_contact_item_text_paddingLeft</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="IdentitySafeguardContactItemBackground">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/idsafeguard_contact_item_height</item>
+    </style>
+    <style name="IdentitySafeguardContactItemAlert">
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/idsafeguard_contact_item_alert_marginRight</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:contentDescription">@string/imageButtonContentDescription</item>
+    </style>
+    <style name="IdentitySafeguardContactItemIcon">
+        <item name="android:padding">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/imageButtonContentDescription</item>
+    </style>
+    <style name="IdentitySafeguardBreachItemTitle">
+        <item name="android:textSize">@dimen/idsafeguard_breach_name_text_size</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/idsafeguard_breach_item_text_paddingLeft</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="IdentitySafeguardBreachItemDesc">
+        <item name="android:textSize">@dimen/idsafeguard_breach_date_text_size</item>
+        <item name="android:textColor">#ff929292</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@dimen/idsafeguard_breach_item_text_paddingLeft</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="IdentitySafeguardBreachItemBackground">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/idsafeguard_breach_item_height</item>
+    </style>
+    <style name="IdentitySafeguardDismissAllButton">
+        <item name="android:textSize">@dimen/idsafeguard_contacts_title_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/btn_red</item>
+        <item name="android:paddingTop">@dimen/idsafeguard_dismiss_all_button_padding_height</item>
+        <item name="android:paddingBottom">@dimen/idsafeguard_dismiss_all_button_padding_height</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">@color/text_shadow</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="IdSafeguardMenuItemDivider">
+        <item name="android:background">@color/menu_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="IdentityMenuItemText">
+        <item name="android:textSize">@dimen/idsafeguard_menu_text_size</item>
+        <item name="android:textColor">@color/black_body_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/idsafeguard_menu_item_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="av_sr_result_title">
+        <item name="android:textSize">27.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:shadowColor">@color/text_shadow</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="av_sr_result_close">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">20.0dip</item>
+        <item name="android:src">@drawable/close</item>
+        <item name="android:contentDescription">@string/imageButtonContentDescription</item>
+    </style>
+    <style name="av_sr_section">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="av_sr_threat_item">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="av_sr_empty_item">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/gray_on_black_discreet</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="av_sr_list_accessory">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="av_sr_list_accessory.info" parent="@style/av_sr_list_accessory">
+        <item name="android:src">@drawable/pua_ic_info</item>
+    </style>
+    <style name="av_sr_list_accessory.trash" parent="@style/av_sr_list_accessory">
+        <item name="android:src">@drawable/pua_ic_delete</item>
+    </style>
+    <style name="av_sr_list_accessory.info_gray" parent="@style/av_sr_list_accessory">
+        <item name="android:src">@drawable/pua_ic_info_gray</item>
+    </style>
+    <style name="av_sr_details_file_name">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="av_sr_details_category_name">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="av_sr_details_category_container">
+        <item name="android:background">@color/gray_on_white</item>
+    </style>
+    <style name="av_sr_details_button">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_corner_red</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="lockscreen_button">
+        <item name="android:textSize">@dimen/lockscreen_button_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/numpad_text_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/numpad_pressed_effect</item>
+        <item name="android:paddingLeft">@dimen/lockscreen_large_padding</item>
+        <item name="android:paddingTop">@dimen/lockscreen_large_padding</item>
+        <item name="android:paddingRight">@dimen/lockscreen_large_padding</item>
+        <item name="android:paddingBottom">@dimen/lockscreen_large_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

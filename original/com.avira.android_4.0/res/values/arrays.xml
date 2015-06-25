@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="oe_categories_keys">
+        <item>oe_malware_categorie</item>
+        <item>oe_adware_categorie</item>
+        <item>oe_pua_categorie</item>
+    </string-array>
+    <string-array name="oe_section_titles">
+        <item>oe_scan_result_malware_threats_section</item>
+        <item>oe_scan_result_adware_section</item>
+        <item>oe_scan_result_pua_section</item>
+    </string-array>
+    <string-array name="oe_section_element_safe">
+        <item>oe_scan_result_malware_no_info</item>
+        <item>oe_scan_result_spyware_no_info</item>
+        <item>oe_scan_result_pua_no_info</item>
+    </string-array>
+    <string-array name="oe_section_element_turn_on">
+        <item>oe_scan_result_malware_settings_info</item>
+        <item>oe_scan_result_adware_settings_info</item>
+        <item>oe_scan_result_pua_settings_info</item>
+    </string-array>
+    <string-array name="oe_threat_detail_title">
+        <item>oe_scan_result_details_malware_title</item>
+        <item>oe_scan_result_details_adware_title</item>
+        <item>oe_scan_result_details_pua_title</item>
+    </string-array>
+    <string-array name="oe_threat_detail_contains">
+        <item>oe_scan_result_details_malware_lower_case</item>
+        <item>oe_scan_result_details_adware_lower_case</item>
+        <item>oe_scan_result_details_pua_lower_case</item>
+    </string-array>
+    <string-array name="oe_threat_info_title">
+        <item>oe_scan_result_threat_info_malware_title</item>
+        <item>oe_scan_result_threat_info_adware_title</item>
+        <item>oe_scan_result_threat_info_pua_title</item>
+    </string-array>
+    <string-array name="oe_threat_info_detail">
+        <item>oe_scan_result_threat_info_malware_detail</item>
+        <item>oe_scan_result_threat_info_adware_detail</item>
+        <item>oe_scan_result_threat_info_pua_detail</item>
+    </string-array>
+    <string-array name="oe_categories">
+        <item>Potentialy Uwanted Applications</item>
+        <item>Malware</item>
+        <item>Adware</item>
+    </string-array>
+    <string-array name="oe_pua_categorie">
+        <item>PUA</item>
+        <item>APPL</item>
+        <item>SPR</item>
+        <item>PFS</item>
+    </string-array>
+    <string-array name="oe_malware_categorie">
+        <item>ANDROID_MALWARE</item>
+        <item>NV</item>
+        <item>ANDROID</item>
+        <item>EXP</item>
+        <item>JAVA</item>
+        <item>JS</item>
+        <item>HTML</item>
+        <item>PHISH</item>
+        <item>SWF</item>
+        <item>BDS</item>
+        <item>DIAL</item>
+        <item>LINUX</item>
+        <item>MACOS</item>
+        <item>RKIT</item>
+        <item>PDF</item>
+        <item>DR</item>
+        <item>TR</item>
+        <item>VBS</item>
+        <item>W32</item>
+        <item>W64</item>
+        <item>W97M</item>
+        <item>WORM</item>
+        <item>X97M</item>
+        <item>ADSPY</item>
+        <item>SPYWARE</item>
+    </string-array>
+    <string-array name="oe_adware_categorie">
+        <item>ADWARE</item>
+    </string-array>
+    <string-array name="supportedLanguagesArray">
+        <item>en</item>
+        <item>de</item>
+        <item>it</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>pt</item>
+        <item>ko</item>
+        <item>ja</item>
+    </string-array>
+</resources>

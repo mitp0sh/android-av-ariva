@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dashboard_item_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/blacklistContact" style="@style/AntiTheftItemBackground">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+            <com.avira.android.KievitLightTextView android:gravity="center|left" android:layout_gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/WhoBlacklisted" android:layout_weight="0.8" style="@style/AntiTheftItemTitle" />
+            <com.avira.android.KievitLightTextView android:textSize="24.0sp" android:textColor="@color/menu_value_text_color" android:gravity="center|right" android:layout_gravity="right" android:id="@id/BlacklistContactCount" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_weight="0.2" />
+        </LinearLayout>
+        <com.avira.android.KievitLightTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/WhoBlackListedDetail" style="@style/AntiTheftItemDesc" />
+    </LinearLayout>
+    <View style="@style/DashboardItemDivider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/blacklistHistory" style="@style/AntiTheftItemBackground">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+            <com.avira.android.KievitLightTextView android:gravity="center|left" android:layout_gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/ContactHistory" android:layout_weight="0.8" style="@style/AntiTheftItemTitle" />
+            <com.avira.android.KievitLightTextView android:textSize="24.0sp" android:textColor="@color/menu_value_text_color" android:gravity="center|right" android:layout_gravity="right" android:id="@id/BlacklistHistoryCount" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_weight="0.2" />
+        </LinearLayout>
+        <com.avira.android.KievitLightTextView android:id="@id/ContactHistoryDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ContactHistoryDetails" style="@style/AntiTheftItemDesc" />
+    </LinearLayout>
+</LinearLayout>
